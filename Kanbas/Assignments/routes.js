@@ -1,4 +1,5 @@
 import * as assignmentsDao from "./dao.js";
+
 export default function AssignmentRoutes(app) {
     app.delete("/api/assignments/:assignmentId", async (req, res) => { // delete assignment
         const { assignmentId } = req.params;
